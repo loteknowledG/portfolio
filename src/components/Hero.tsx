@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             Quang Le
           </h1>
           <p className="text-xl md:text-2xl text-slate-200 mb-8 tracking-wide">
-            Software Developer
+            Software Professional
           </p>
           <p className="text-base md:text-lg text-slate-300 mb-12 max-w-xl mx-auto leading-relaxed">
             Creating thoughtful digital experiences through design and code.
