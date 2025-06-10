@@ -34,7 +34,7 @@ const Header: React.FC = () => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled 
-            ? 'bg-white/70 backdrop-blur-lg shadow-sm py-4' 
+            ? 'bg-white/5 backdrop-blur-xl shadow-lg border-b border-white/10 py-4' 
             : 'bg-transparent backdrop-blur-sm py-6'
         }`}
       >
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
             <a 
               href="#" 
               className={`text-xl font-bold tracking-tight transition-colors ${
-                isScrolled ? 'text-slate-900' : 'text-white'
+                isScrolled ? 'text-white' : 'text-white'
               }`}
               aria-label="Home"
             >
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
                       href={link.href}
                       className={`font-medium text-sm tracking-wide transition-colors ${
                         isScrolled 
-                          ? 'text-slate-600 hover:text-slate-900' 
+                          ? 'text-white/80 hover:text-white' 
                           : 'text-white/80 hover:text-white'
                       }`}
                     >
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
             {/* Mobile Menu Button */}
             <button
               className={`md:hidden p-2 transition-colors relative z-[60] ${
-                isScrolled ? 'text-slate-900' : 'text-white'
+                isScrolled ? 'text-white' : 'text-white'
               } ${isMenuOpen ? 'text-white' : ''}`}
               onClick={toggleMenu}
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
