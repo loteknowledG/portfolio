@@ -94,7 +94,7 @@ const Header: React.FC = () => {
       >
         {/* Backdrop */}
         <div 
-          className={`absolute inset-0 bg-black/10 backdrop-blur-sm transition-all duration-500 ${
+          className={`absolute inset-0 bg-black/5 backdrop-blur-sm transition-all duration-500 ${
             isMenuOpen ? 'opacity-100' : 'opacity-0'
           }`}
           onClick={() => setIsMenuOpen(false)}
@@ -109,13 +109,13 @@ const Header: React.FC = () => {
           }`}
         >
           {/* Glass morphism background */}
-          <div className="h-full bg-gradient-to-br from-white/5 to-white/2 backdrop-blur-xl border-l border-white/10 shadow-2xl">
+          <div className="h-full bg-gradient-to-br from-white/2 to-white/1 backdrop-blur-xl border-l border-white/5 shadow-2xl">
             {/* Subtle gradient overlay for depth */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-900/40 via-slate-800/30 to-slate-900/50" />
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-slate-800/15 to-slate-900/25" />
             
             {/* Animated background elements */}
-            <div className="absolute top-20 right-10 w-32 h-32 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-full blur-xl animate-pulse" />
-            <div className="absolute bottom-40 left-8 w-24 h-24 bg-gradient-to-br from-emerald-500/5 to-cyan-500/5 rounded-full blur-lg animate-pulse delay-1000" />
+            <div className="absolute top-20 right-10 w-32 h-32 bg-gradient-to-br from-blue-500/3 to-purple-500/3 rounded-full blur-xl animate-pulse" />
+            <div className="absolute bottom-40 left-8 w-24 h-24 bg-gradient-to-br from-emerald-500/3 to-cyan-500/3 rounded-full blur-lg animate-pulse delay-1000" />
             
             {/* Content */}
             <div className="relative z-10 h-full flex flex-col">
@@ -131,7 +131,7 @@ const Header: React.FC = () => {
                     <li key={link.name}>
                       <a
                         href={link.href}
-                        className={`block text-2xl font-medium text-white/90 hover:text-white transition-all duration-300 hover:translate-x-2 transform ${
+                        className={`block text-2xl font-medium text-white/95 hover:text-white transition-all duration-300 hover:translate-x-2 transform ${
                           isMenuOpen 
                             ? 'translate-y-0 opacity-100' 
                             : 'translate-y-4 opacity-0'
@@ -151,7 +151,7 @@ const Header: React.FC = () => {
                 </ul>
                 
                 {/* Contact info */}
-                <div className={`mt-16 pt-8 border-t border-white/5 transition-all duration-500 ${
+                <div className={`mt-16 pt-8 border-t border-white/3 transition-all duration-500 ${
                   isMenuOpen 
                     ? 'translate-y-0 opacity-100' 
                     : 'translate-y-4 opacity-0'
@@ -159,10 +159,10 @@ const Header: React.FC = () => {
                 style={{
                   transitionDelay: isMenuOpen ? '600ms' : '0ms'
                 }}>
-                  <p className="text-white/50 text-sm mb-2">Get in touch</p>
+                  <p className="text-white/40 text-sm mb-2">Get in touch</p>
                   <a 
                     href="mailto:jobs.quang.le@gmail.com"
-                    className="text-white/70 hover:text-white transition-colors text-sm"
+                    className="text-white/60 hover:text-white transition-colors text-sm"
                   >
                     jobs.quang.le@gmail.com
                   </a>
@@ -178,7 +178,7 @@ const Header: React.FC = () => {
               style={{
                 transitionDelay: isMenuOpen ? '700ms' : '0ms'
               }}>
-                <p className="text-white/30 text-xs">
+                <p className="text-white/20 text-xs">
                   © 2025 Quang Le
                 </p>
               </div>
