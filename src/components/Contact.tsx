@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
             </a>
             
             <a 
-              href="/Quang Le cv.pdf" 
+              href="./Quang Le cv.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center py-3 px-8 bg-slate-700 text-white rounded-full hover:bg-slate-600 transition-colors"
